@@ -1,0 +1,139 @@
+{% extends "layout.html" %} 
+
+{% block title %} 
+  Chanels 
+{% endblock %} 
+
+{% block body %}
+
+<!-- Registro -->
+<br><br>
+<!--
+<div class="modal" id="registerModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>Bienvenido al chat grupal</p>
+        <form id="register_form">
+          <div class="form-group">
+            <input
+              type="text"
+              autocomplete="off"
+              autofocus
+              name="username"
+              id="username"
+              placeholder="Display name..."
+              class="form-control"
+              required
+              style="width: 65%;"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-outline-light"
+            style="width: 105px;"
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+    <div class="row">
+
+        <div id="sidebar" class="col-md-3">
+
+            <div class="col-lg-12">
+                <div class="jumbotron1">
+                    <div class="row">
+                        <!-- Nombre de usuario -->
+                        <h5 id="display_username"></h5>
+                    </div>
+
+                    <div class="row">
+                    <!-- Formulario de creación de canales -->
+                        <form id="create_channel">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    autocomplete="off"
+                                    name="channel"
+                                    id="channel"
+                                    placeholder="Channel name..."
+                                    class="form-control form-control-sm"
+                                    required
+                                />
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm">Create</button>
+                        </form>
+                    </div>
+
+                    <div class="row">
+                        <!-- Lista de canales -->
+                        <label>Lista de canales:</label>
+                        <div id="container" class="channels">
+                            <div id="channels" style="max-height: 293px;">
+                                {% for channel in channels %}
+                                    <div class="row" style="text-align: center; display: block;">
+                                        <button class="btn btn-link" data-channel="{{ channel }}">
+                                            {{ channel }}
+                                        </button>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="maincontent" class="col-md-8">
+        <!-- Contenido para mostrar después de iniciar sesión-->
+            <div id="display">
+                <div class="col-12" style="width: 100%;">
+                <!-- Chat section -->
+                    <div class="col-12">
+                        <div id="chat" style="height: 99.7%; display: block;">
+                        <!-- Nombre del canal en la parte superior -->
+                            <div class="jumbotron jumbotron2">
+                                 <h2 id="channel_name"></h2>
+                            </div>
+
+                            <!-- Message section -->
+                            <div class="container messages" id="chatbox">
+                                <div id="messages"></div>
+                            </div>
+
+                            <!-- Formulario para enviar mensajes -->
+                            <div class="jumbotron jumbotron3">
+                                <form class="form-inline" id="send_message_form">
+                                    <div class="form-group" style="width: 90%;">
+                                        <textarea
+                                            type="text"
+                                            id="message"
+                                            class="form-control"
+                                            autocomplete="off"
+                                            placeholder="Type a message..."
+                                            style="width: 98.7%;"
+                                            autofocus
+                                        ></textarea>
+                                    </div>
+                                    <button type="submit" id="sendbutton" class="btn btn-warning" style="width: 10%;">
+                                        Send
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br><br>
+{% endblock %}

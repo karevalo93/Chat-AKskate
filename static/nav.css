@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* h1,h2,h3,h4,h5,h6{
+  font-family: 'Bangers', cursive;
+  letter-spacing: 3px;
+}
+* p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+    background-image: url(https://static.brusheezy.com/system/resources/previews/000/013/939/non_2x/grunge-texture-by-krist-photoshop-textures.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 2em 0;
+    left: 0; top: 0; right: 0;
+}
+
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+    
+}
+
+.menu ul li a {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    
+}
+
+.menu li  a:hover{
+    background-color: #fdd835;
+    border-radius: 40px;
+    color: #2a2a2a;
+}
+
+
+footer{
+    background-image: url(https://static.brusheezy.com/system/resources/previews/000/013/939/non_2x/grunge-texture-by-krist-photoshop-textures.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    height: 40vh;
+}
+
+.footer-widget{
+    background-color: transparent;
+    margin: 0 10px;
+    text-align: justify;
+}
+
+.widget-title{
+    color: #fdd835;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.about-widget p{ 
+    line-height: 20px;
+    margin: 10px 0 30px 0;
+}
+
+.cards{
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 12px;
+}
+
+.about-widget p span{
+    margin-right: 10px;
+}
+ .footer-widget ul{
+     margin-left: 20px;
+ }
+
+ .footer-widget ul li{
+     padding-bottom: 14px;
+ }
+
+.footer-widget ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-widget ul li a:hover{
+    color: #d2d2d2;
+    margin-left: 10px;
+    transition: all .5s ease;
+}
+
+.contact-address{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff8c;
+    line-height: 20px;
+}
+
+.contact-number, .contact-email{
+    margin: 10px 0;
+}
+
+.contact-address i, .contact-number i, .contact-email i{
+    margin-right: 10px;
+}
+
+.social-widget a{
+    display: inline-block;
+    font-size: 28px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.social-widget a:hover{
+    color: #666666;
+    transition: all .5s ease;
+
+}
+
+.copyright{
+    background-color: #000;
+    padding: 20px;
+}
+
+.copyright p{
+    color: #d2d2d2;
+    text-align: center;
+}
+
+.copyright p a{
+    color: #d2d2d2;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px){ 
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .menu {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu ul.show {
+        display: block;
+    }
+
+    .menu ul li{
+        display: block;
+    }
+    
+    .menu ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 40px;
+    }
+    
+    .menu li > a:hover{
+        background-color: black;
+        border-radius: 40px;
+        transition: all 0.4s linear;
+    }
+    
+}

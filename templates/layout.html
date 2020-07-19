@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="{{ url_for('static', filename='nav.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='chanel.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='favicon.ico') }}" rel="icon">
+
+        
+
+        <title>{% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="container logo-nav-container">
+                <a href="" class="logo">LOGO</a>
+                <span class="menu-icon">Menú</span>
+                <nav class="menu">
+
+                    <ul>
+                        <li><a href="http://127.0.0.1:8000/">Inicio</a></li>
+                        <li><a href="http://127.0.0.1:8000/localidad">Spots</a></li>
+                        <li><a href="http://127.0.0.1:8000/store">Tienda</a></li>
+                        
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+
+                {% block body %}{% endblock %}
+                
+                <footer>
+
+                    <div class="container wrap">
+            
+                        <div class="row">
+            
+                            
+                            <div class="column">
+                                <div class="footer-widget"><br>
+                                    <h2 class="widget-title">About Us</h2>
+                                    <p>AK Skate</p>
+                                    <div class="cards">
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <i class="fab fa-cc-paypal"></i>
+                                        <i class="fab fa-cc-visa"></i>
+                                    </div>
+            
+                                    <p><span><i class="fas fa-lock"></i></span>  Secure Online Payment</p>
+                                </div>
+                            </div>
+            
+            
+                            <div class="column">
+                                <div class="footer-widget"><br>
+                                    <h2 class="widget-title">Información</h2>
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Terminos y Condiciones</a></li>
+                                        <li><a href="#">Politica Privada</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+            
+            
+                            <div class="column">
+                                <div class="footer-widget"><br>
+                                    <h2 class="widget-title">Contact</h2>
+            
+                                    <div class="contact-address">
+                                        <i class="fas fa-map-marker-alt"></i>Address : Cra 100a #61 - 15
+                                    </div>
+            
+                                    <div class="contact-number">
+                                        <i class="fas fa-phone-square-alt"></i>Phone : +57 3022387866
+                                    </div>
+            
+                                    <div class="contact-email">
+                                        <i class="fas fa-envelope"></i>Email: kevin.arevalo.l@hotmail.com
+                                    </div>
+            
+                                    <div class="social-widget">
+                                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                
+                    <div class="copyright">
+                        <div class="container">
+                            <p>Copyright © <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                            All rights reserved | Design made with <i class="fas fa-heart"></i> by <a href="#" target="_blank">AK SKATE DEV</a></p>
+                        </div>
+                    </div>
+                </footer> 
+
+                
+
+
+        <script src="https://kit.fontawesome.com/619fbefa7c.js" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='chat.js') }}"></script>
+        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+        
+       <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

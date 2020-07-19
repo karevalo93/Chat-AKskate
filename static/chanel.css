@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+.container{
+
+  height: 100%;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 3.5rem;    
+}
+
+#sidebar{
+  height: 500px;
+  background-image: url(https://static.brusheezy.com/system/resources/previews/000/013/939/non_2x/grunge-texture-by-krist-photoshop-textures.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+#maincontent{
+  height: 500px;
+  background: transparent;
+}
+
+#channel_name{
+  color: #fdd835;
+}
+#send_message_form{
+  font-family: 'Open Sans', sans-serif;
+}
+.modal-content {
+  background: black;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+.modal-dialog {
+  background: whitesmoke;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.jumbotron1 {
+  background: transparent;
+  color: #fdd835;
+  border-radius: 8px;
+  padding-top: 8px;
+  margin-bottom: 0px;
+  height: 491px;
+}
+
+.btn-link{ 
+  color: #fdd835;
+}
+
+.jumbotron1 > .row {
+  padding-top: 8px;
+  text-align: center;
+  display: block;
+}
+
+label{
+  font-weight: bold;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+}
+
+.channels {
+  height: 294px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.jumbotron2 {
+  color: #fdd835;
+  padding: 0.8%;
+  margin-left: -30px;
+  background-image: url(https://static.brusheezy.com/system/resources/previews/000/013/939/non_2x/grunge-texture-by-krist-photoshop-textures.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 10px;
+  text-align: center;
+  width: 106.50%;
+  height: 13.4%;
+  color: white;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+.jumbotron3 {
+  padding: 0.97%;
+  margin-left: -30px;
+  background-image: url(https://static.brusheezy.com/system/resources/previews/000/013/939/non_2x/grunge-texture-by-krist-photoshop-textures.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 5px;
+  text-align: left;
+  width: 106.50%;
+  margin-bottom: 0px;
+}
+
+body {
+  background-image: url("https://avante.biz/wp-content/uploads/Element-Skateboard-Wallpapers/Element-Skateboard-Wallpapers-008.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.jumbotron4 {
+  padding: 0.5%;
+  background-color: #474747;
+  padding-left: 8px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 10px;
+  text-align: right;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.jumbotron4 > strong{
+  color: #fdd835;
+  font-family: 'Bangers', cursive;
+}
+
+.jumbotron5 {
+  padding: 0.5%;
+  background-color: #1f1f1f;
+  padding-left: 8px;
+  margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.jumbotron5 > strong{
+  color: #fdd835;
+  font-family: 'Bangers', cursive;
+}
+
+.jumbotron6 {
+  padding: 0.5%;
+  text-align: center;
+  background: #34b7f1;
+  font-family: cursive;
+  margin-bottom: 14px;
+  margin-left: 10px;
+  width: fit-content;
+  color: darkslateblue;
+  font-size: 14px;
+}
+
+.messages {
+  height: 360px;
+  margin-top: -20px;
+  margin-left: -40px;
+  overflow-y: scroll;
+  width: 107.5%;
+  display: flex;
+  flex-direction: column-reverse;
+  white-space: pre;
+}
