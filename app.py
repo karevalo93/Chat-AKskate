@@ -14,18 +14,51 @@ channels = []
 messages = {}
 
 channels.append("General")
-channels.append("Piso Liso")
 channels.append("Preguntas Frecuentes")
+channels.append("Piso Liso")
+channels.append("El Japon")
+channels.append("Parque Gilma Jimenez")
+channels.append("Fontanar del Rio")
+channels.append("La Francia")
+channels.append("Parque Tercer Milenio")
+channels.append("SkatePark Movistar Arena")
+channels.append("El Tunal")
+channels.append("Unidad Deportiva el Salitre")
+channels.append("San Cristobal")
+channels.append("Villas de Granada")
+channels.append("Atahualpa")
+channels.append("La Florida")
+channels.append("Bellavista")
+channels.append("La Estacion")
+channels.append("La Esperanza")
+channels.append("Madelena")
+channels.append("Desarrollo Arabia")
+
 messages["General"] = []
-messages["Piso Liso"] = []
 messages["Preguntas Frecuentes"] = []
+messages["Piso Liso"] = []
+messages["El Japon"] = []
+messages["Parque Gilma Jimenez"] = []
+messages["Fontanar del Rio"] = []
+messages["La Francia"] = []
+messages["Parque Tercer Milenio"] = []
+messages["SkatePark Movistar Arena"] = []
+messages["El Tunal"] = []
+messages["Unidad Deportiva el Salitre"] = []
+messages["San Cristobal"] = []
+messages["Villas de Granada"] = []
+messages["Atahualpa"] = []
+messages["La Florida"] = []
+messages["Bellavista"] = []
+messages["La Estacion"] = []
+messages["La Esperanza"] = []
+messages["Madelena"] = []
+messages["Desarrollo Arabia"] = []
 
 
 @app.route("/")
 def channel():
     return render_template("channel.html", users=users, channels=channels, async_mode = socketio.async_mode)
-
-
 
 
 @socketio.on("register")
@@ -113,10 +146,6 @@ def send_message(data):
 
 	# Emitir recibir mensaje en el lado del cliente
     emit("receive_message", my_data, room=data["channel"])
-
-
-
-
 
 
 

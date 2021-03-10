@@ -79,7 +79,7 @@ label{
 
 .channels {
   height: 294px;
-  overflow-y: hidden;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 

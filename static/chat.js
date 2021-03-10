@@ -28,12 +28,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if(leerCookie("cookie_username") != storage.getItem("storage_username")){
         socket.emit("register", leerCookie("cookie_username"));
     }
+
+    if(leerCookie("cookie_username") == storage.getItem("storage_username")){
+        socket.emit("change channel", storage.getItem('channel'), storage.getItem('channel'), storage.getItem("storage_username"));
+    }
     
 
 
     function cambiar_el_canal()
     {
-        
         // Cada botón que tenga clase btn-link debería emitir un evento "change channel"
         document.querySelectorAll('button.btn-link').forEach(button => {
             button.onclick = () => {
